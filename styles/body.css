@@ -1,0 +1,127 @@
+/* * second container design start */
+.container .content2 {
+  /* width: 60%; */
+  margin: auto;
+  padding: 4rem;
+}
+
+.container-body {
+  height: auto;
+}
+
+.school-header {
+  text-align: center;
+  font-size: 3rem;
+  position: sticky;
+  top: -3rem;
+  overflow: hidden;
+  background: white;
+}
+
+.school-header span:nth-child(3) {
+  font-size: 6rem;
+}
+
+.container .content2 .schools {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container .content2 .school {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 6px;
+  border-radius: 4px;
+}
+
+.bbb {
+  border: 4px solid #2779d4;
+  background: #70a9ff6b;
+}
+
+.school .school-logo {
+  width: 40%;
+  margin: auto;
+}
+
+.school .school-logo img {
+  width: 100%;
+}
+
+.school .description {
+  color: white;
+}
+
+.school .description .school-name {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: rgb(6, 6, 8);
+}
+
+.school .description .school-description {
+  text-align: left;
+  color: #040414;
+  font-size: 1.5rem;
+}
+
+.school .description .school-buttons {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.school .description .school-buttons a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.school .description .school-buttons button {
+  font-size: 1.8rem;
+  width: 50%;
+  height: 40px;
+  background: #2779d4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.school .description .school-buttons button:hover {
+  background: #2d6fb9;
+}
+
+.bbg {
+  border: 4px solid #00833d;
+  background: #2ad40b40;
+}
+
+.bbg .description .school-buttons button {
+  background: #00833d;
+}
+
+.bbg .description .school-buttons button:hover {
+  background: #046732;
+}
+
+.bbg .school-logo img {
+  border-radius: 50%;
+}
+
+/* * make responsive */
+@media all and (max-width: 600px) {
+  .container .content2 .schools {
+    flex-direction: column;
+  }
+}
+
+.other {
+  font-size: 5rem;
+}
